@@ -38,8 +38,8 @@
             ],
             "styles": ["src/styles.css"],
             "scripts": [],
-            "baseHref": "./",
-            "deployUrl": "./",
+            "baseHref": "/barber12/",
+            "deployUrl": "/barber12/",
             "outputHashing": "all"
           },
           "configurations": {
