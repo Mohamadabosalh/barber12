@@ -11,6 +11,7 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { TodaysAppointmentsComponent } from './todays-appointments/todays-appointments.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common'; // ✅ أضف هذا
 
 const routes: Routes = [
   {
@@ -66,6 +67,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }] // ✅ أضف هذا
+
 })
 export class AppRoutingModule { }
