@@ -121,8 +121,49 @@ button[type="submit"]:focus {
   outline: none;
   border: 2px solid #ffcc00;
 }
+
 .home-date {
   margin-bottom: 25px;
   font-size: 25px;
   color: #FFD700;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 10px;
+  }
+
+  .navigation nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  form {
+    width: 90%;
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-control {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .home-date {
+    font-size: 20px;
+  }
 }

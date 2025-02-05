@@ -125,6 +125,7 @@ p {
   margin: 10px 0;
   color: #b3b3b3;
 }
+
 .home-gallery {
   display: flex;
   justify-content: center;
@@ -144,4 +145,37 @@ p {
 .home-gallery img:hover {
   transform: scale(1.1);
   box-shadow: 0 5px 15px rgba(255, 215, 0, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+  .home-body h1 {
+    font-size: 40px;
+  }
+
+  .home-date {
+    font-size: 20px;
+  }
+
+  .home-image {
+    width: 140px;
+  }
+
+  .home-gallery img {
+    width: 150px;
+    height: 150px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
